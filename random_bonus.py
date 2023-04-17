@@ -3,13 +3,12 @@ import random
 print("Python 3")
 
 def random_bonus(hourly_rate):
-    two = [2,2,2,2,2]
-    three = [3,3,3,3,3]
-    four = [5,5,5]
-    five = [2,2,2,2,2,2,2,2]
-    six = [1,1,1,1,1,1,1,1,1,1,1,1]
-
-    bonus_list = two + three + four + five + six
+    two = [2]*5
+    five = [5]*2
+    eight = [8]*2
+    twelve = [12]*1
+   
+    bonus_list = two + five + eight + twelve
 
     number_of_hours = random.choice(bonus_list)
     bonus = hourly_rate * number_of_hours
